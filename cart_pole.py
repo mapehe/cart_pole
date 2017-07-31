@@ -20,6 +20,8 @@ def bias_variable(shape):
   initial = tf.constant(1.0/shape[0], shape=shape)
   return tf.Variable(initial)
 
+
+#I borrowed this from https://gist.github.com/karpathy/a4166c7fe253700972fcbc77e4ea32c5
 def discount_rewards(r):
   discounted_r = np.zeros_like(r)
   running_add = 0
