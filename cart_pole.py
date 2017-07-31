@@ -67,7 +67,7 @@ loss    =   tf.tensordot( rewards,
                           tf.reduce_sum(-yhot * tf.log(y), reduction_indices = [1]),
                           axes=1)
 
-training_step = tf.train.AdamOptimizer(1e-2).minimize(loss)
+training_step = tf.train.AdamOptimizer(1e-3).minimize(loss)
 
 env = gym.make('CartPole-v0')
 
