@@ -5,4 +5,4 @@ While there [already are](http://karpathy.github.io/2016/05/31/rl/) excellent tu
 learning in general, I had trouble finding one I liked that uses TensorFlow's automatic differentiation instead of
 tinkering with the gradients by hand.
 
-I'm planning to further discuss this script in a blog post later.
+I discuss the details of this script in [a post](https://mapehe.github.io/Cart-Pole/).
